@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './App.css'
 
 export const Signup = (props) => {
   const [name, setName] = useState('');
@@ -28,7 +29,9 @@ export const Signup = (props) => {
   }
   return (
     <div className='auth-form-container'>
-      <form onSubmit={handleSubmit}>
+      <h2><strong>Signup</strong></h2>
+
+      <form className="signup-form"onSubmit={handleSubmit}>
         <label htmlFor="name">Full name</label>
         <input value={name} type="text" placeholder="Full Name" id="name" name="name" onChange={(e) => setName(e.target.value)} />
         <label htmlFor="email">Email</label>
@@ -40,7 +43,7 @@ export const Signup = (props) => {
 
       {error && <div className="error-message">{error}</div>}
 
-      <button onClick={() => props.onFormSwitch('login')}>Já tem uma conta? Entre.</button>
+      <button className='link-btn' onClick={() => props.onFormSwitch('login')}>Já tem uma conta? Entre.</button>
     </div>
   );
 }

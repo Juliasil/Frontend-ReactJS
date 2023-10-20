@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './App.css'
 
 export const Login = (props) => {
   const [email, setEmail] = useState()
@@ -28,15 +29,16 @@ export const Login = (props) => {
   
   return (
     <div className='auth-form-container'>
-    <form onSubmit={handleSubmit}>
-    <label htmlFor="email">email</label>
-    <input value={email} type="email" placeholder='seuemai@gmail.com' id='email' name='email'/>
-    <label htmlFor="password">password</label>
-    <input value={password} type="password" placeholder='********' id='password' name='password'/>
+      <h2><strong>Longin</strong></h2>
+    <form className="login-form" onSubmit={handleSubmit}>
+    <label htmlFor="email">Email</label>
+        <input value={email} type="email" placeholder="seuemail@gmail.com" id="email" name="email" onChange={(e) => setEmail(e.target.value)} />
+        <label htmlFor="password">Password</label>
+        <input  value={password}  type="password"  placeholder="********"  id="password" name="password"onChange={(e) => setPassword(e.target.value)} />
     <button type="submit">Log In</button>
   </form>
 
-  <button onClick={() => props.onFormSwitch ('signup')}> Não tem uma conta? Regitra -se. </button>
+  <button className='link-btn' onClick={() => props.onFormSwitch ('signup')}> Não tem uma conta? Regitra -se. </button>
   </div>
   )
 }
