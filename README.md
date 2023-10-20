@@ -1,5 +1,54 @@
 # Getting Started with Create React App
 
+# Projeto de Autenticação Frontend em ReactJS
+
+Este é o frontend do projeto de autenticação, escrito em ReactJS. Este cliente permite que os usuários façam login, registrando-se e visualizem uma mensagem de boas-vindas após o login.
+
+## Pré-requisitos
+
+- [Node.js](https://nodejs.org/): Certifique-se de que o Node.js esteja instalado em seu sistema.
+
+## Como Executar
+
+1. Navegue até a pasta `client-react`.
+2. Abra um terminal na pasta `client-react`.
+3. Execute o seguinte comando para instalar as dependências:
+
+   
+npm install
+
+Após a instalação, execute o seguinte comando para iniciar o aplicativo React:
+
+npm start
+
+O aplicativo React será iniciado e será aberto automaticamente em seu navegador padrão.
+
+
+<h2>Funcionalidades</h2>
+
+Este frontend ReactJS oferece as seguintes funcionalidades:
+
+Página de Login: Os usuários podem fazer login com seu endereço de e-mail e senha.
+
+Página de Registro: Os usuários podem criar uma nova conta fornecendo seu nome, endereço de e-mail e senha.
+
+Exibição de Mensagem de Boas-Vindas: Após um login bem-sucedido, os usuários são direcionados para uma página de boas-vindas que exibe uma mensagem de saudação.
+
+Roteamento: O aplicativo faz uso de rotas React para navegar entre as páginas de login, registro e boas-vindas.
+
+Integração com Backend: As informações de login e registro são enviadas para o backend por meio de solicitações HTTP via JSON.
+
+<h2>Estrutura de Arquivos</h2>
+
+A estrutura de arquivos do aplicativo React é organizada da seguinte forma:
+
+src/: Contém os componentes React, rotas e arquivos de estilo.
+public/: Contém arquivos estáticos, como o arquivo HTML base.
+
+<span align="center">
+
+</span>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
