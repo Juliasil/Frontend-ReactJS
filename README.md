@@ -46,6 +46,14 @@ src/: Contém os componentes React, rotas e arquivos de estilo.
 public/: Contém arquivos estáticos, como o arquivo HTML base.
 
 <span align="center">
+   
+ ![Captura de tela de 2023-10-19 23-23-15](https://github.com/Juliasil/Frontend-ReactJS/assets/85976415/9e328c69-1626-419a-858b-2873e24d56e7)
+</span>
+
+<h2>Responsivo</h2>
+<span>
+   
+   ![Captura de tela de 2023-10-19 23-26-49](https://github.com/Juliasil/Frontend-ReactJS/assets/85976415/25096371-29cb-41e6-bc42-60b874afb617)
 
 </span>
 
